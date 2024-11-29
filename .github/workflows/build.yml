@@ -18,9 +18,3 @@ jobs:
         with:
           name: package
           path: ./bin/*.apk
-      - name: Set Up Android SDK
-        uses: actions/setup-android@v3
-        with:
-          android-version: '33.0.0' # Replace with your desired version
-          api-level: '33' # Replace with your desired API level
-          cache: 'android'
