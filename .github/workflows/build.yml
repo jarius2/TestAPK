@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build APK
-        uses: digreatbrian/buildozer-action@v2
+        uses: digreatbrian/buildozer-action@v4
         with:
           python-version: 3.12.1
           buildozer-cmd: buildozer -v android debug
@@ -22,7 +22,7 @@ jobs:
       
           runs-on: ubuntu-latest
         
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
